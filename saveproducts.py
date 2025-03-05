@@ -19,7 +19,7 @@ def fillcategory():
         rt.append(res[0])
     e2['values']=rt
     db.close()
-def savebilling():
+def saveproducts():
     if len(e1.get())==0 or len(e2.get())==0 or len(e3.get())==0 or len(e4.get())==0 or len(e5.get())==0:
         messagebox.showerror('Hi','Pls fill all data')
     else:
@@ -73,7 +73,7 @@ e5 = Entry(t, width =20)
 e5.place(x = 400, y = 260)
 
 
-bt = Button(t, text = 'Save', width = 25, fg = 'Green', command = savebilling)
+bt = Button(t, text = 'Save', width = 25, fg = 'Green', command = saveproducts)
 bt.place(x = 50, y = 400)
 bt2 = Button(t, text = 'Close', width = 25, fg = 'Red', command = btclose)
 bt2.place(x = 350, y = 400)
